@@ -3,7 +3,7 @@
 class hash {
 
 private:
-  int tablesize;
+  int tblSize;
   
 public:
   hash();
