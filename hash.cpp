@@ -1,7 +1,12 @@
 #include <stdio.h>
 #include <iostream.h>
 
-int tblSize = 100;
+using namespace std;
+
+hash::hash()
+  {
+    int tblSize = 100;
+  }
 int hash = 0;
 int index;
 int hash (string key)
@@ -11,7 +16,7 @@ int hash (string key)
     hash = hash + (int)key[i]);
     cout << "hash =" << hash << endl;
     }
-  //index = hash % tblSize;
+  index = hash % tblSize;
   return index;
   
   }
